@@ -7,7 +7,11 @@ export function add() {
 };
 
 export function listToObject(arr) {
-
+  let obj = {}
+  arr.forEach((element, index) => {
+    obj[arr[index].name] = arr[index].value
+  });
+  return obj;
 };
 
 export function deserialize() {
