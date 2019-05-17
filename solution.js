@@ -1,4 +1,4 @@
-export function add() {
+function add() {
   var total = 0
   for (var i=0; i < arguments.length; i++) {
     total += arguments[i];
@@ -6,7 +6,7 @@ export function add() {
   return total;
 };
 
-export function listToObject(arr) {
+function listToObject(arr) {
   let obj = {}
   arr.forEach((element, index) => {
     obj[arr[index].name] = arr[index].value
@@ -14,10 +14,12 @@ export function listToObject(arr) {
   return obj;
 };
 
-export function deserialize() {
+function deserialize() {
 
 };
 
-export function objectToList() {
+function objectToList() {
 
 };
+
+module.exports = {add, listToObject}
