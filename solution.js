@@ -14,12 +14,12 @@ function listToObject(arr) {
   return obj;
 };
 
-function deserialize() {
-
+function objectToList(obj) {
+  let arr = [];
+  Object.keys(obj).forEach(key => {
+    arr.push({name: key, value: obj[key]});
+  })
+  return arr;
 };
 
-function objectToList() {
-
-};
-
-module.exports = {add, listToObject}
+module.exports = {add, listToObject, objectToList}
