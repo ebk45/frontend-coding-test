@@ -17,9 +17,9 @@ function listToObject(arr) {
 function objectToList(obj) {
   let arr = [];
   Object.keys(obj).forEach(key => {
-    arr.push({name: key, value: obj[key]});
+    array.push({name: key, value: obj[key]});
   })
-  return arr;
+  return array;
 };
 
 module.exports = {add, listToObject, objectToList}
